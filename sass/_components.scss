@@ -414,6 +414,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -438,6 +442,11 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -500,6 +509,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5 0rem;
+  }
 
   &__book-now {
     font-size: 2rem;
